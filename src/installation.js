@@ -2,6 +2,7 @@ import "./App.css";
 import ButtonAppBar from "./Components/appBar";
 import React from "react";
 import FadeIn from "react-fade-in";
+import apk from "./assets/app-release.apk";
 function Installation() {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
@@ -54,7 +55,11 @@ function Installation() {
       <div className="install-content">
         <div className="download-button">
           <div className="mItem">
-            <li></li>
+            <li>
+              <a href={apk} download>
+                Télécharger
+              </a>
+            </li>
           </div>
         </div>
       </div>
